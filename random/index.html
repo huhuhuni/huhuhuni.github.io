@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>随机数生成器</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+     box-sizing: border-box;
+    }
+
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    textarea {
+      display: block;
+      height: 6em;
+      padding: 1em;
+      width: 100%;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+    }
+
+    .btn {
+      width: 10em;
+      line-height: 2em;
+      color: #fff;
+      text-align: center;
+      margin: 0 1em;
+      background: #1890ff;
+      border-radius: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <input id="start" placeholder="请输入起始范围"></input
+	<input id="end" placeholder="请输入结束范围"></input>
+    <div class="toolbar">
+      <div class="btn" id="">生成</div>
+      <div class="btn" id="reset">重置</div>
+    </div>
+	<h1 id = 'result'></h1>
+  </div>
+  <script src="./index.js"></script>
+  <script>
+    const $ = document.getElementById.bind(document);
+    const $start = $('start');
+	const $end = $('end');
+    const $go = $('go');
+    const $reset = $('reset');
+	const $result = $('result');
+
+    $go.onclick = function() {
+      $result.value =  go($start.value,$end.value);
+    }
+    $reset.onclick = function() {
+      $result.value= '';
+    }
+  </script>
+</body>
+</html>
