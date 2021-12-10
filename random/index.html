@@ -65,10 +65,10 @@
 	const $result = $('result');
 
     $go.onclick = function() {
-      $result.html(go($start.value,$end.value));
+      $result.innerHTML =go($start.value,$end.value);
     }
     $reset.onclick = function() {
-      $result.html("");
+      $result.innerHTML="";
     }
   </script>
 </body>
