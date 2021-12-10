@@ -65,7 +65,7 @@
 	const $result = $('result');
 
     $go.onclick = function() {
-      $result.innerHTML =go($start.value,$end.value);
+      $result.innerHTML =go(Number($start.value),Number($end.value));
     }
     $reset.onclick = function() {
       $result.innerHTML="";
