@@ -4,21 +4,21 @@
 
 let mainConfig = {
   vssueConfig: {
-    owner: "Yidadaa",
-    repo: "Issue-Blog-With-Github-Action",
+    owner: "huhuhuni",
+    repo: "huhuhuhuni.github.io",
     clientId: "2783a4b752f56c0ed912",
     clientSecret: "c8d9116fcade901567ff34aa1fb09216731683a3"
   },
 
   repoConfig: {
-    owner: "Yidadaa",
-    repo: "Issue-Blog-With-Github-Action",
-    pushBranch: "master",
-    email: "yidadaa@qq.com",
-    filterUsers: ['Yidadaa']
+    owner: "huhuhuni",
+    repo: "huhuhuhuni.github.io",
+    pushBranch: "source",
+    email: "huhuhuhuni@yeah.net",
+    filterUsers: ['huhuhuni']
   },
 
-  title: "YiFei Zhang's Blog",
+  title: "huni's Blog",
   description: "在这里了解我的一切，对编程的热爱永不停歇。",
   customDomain: "",
   base: "/Issue-Blog-With-Github-Action/",
